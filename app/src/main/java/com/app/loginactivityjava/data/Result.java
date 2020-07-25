@@ -1,10 +1,6 @@
 package com.app.loginactivityjava.data;
 
-/**
- * A generic class that holds a result success w/ data or an error exception.
- */
 public class Result<T> {
-    // hide the private constructor to limit subclass types (Success, Error)
     private Result() {
     }
 
@@ -20,7 +16,6 @@ public class Result<T> {
         return "";
     }
 
-    // Success sub-class
     public final static class Success<T> extends Result {
         private T data;
 
@@ -33,7 +28,6 @@ public class Result<T> {
         }
     }
 
-    // Error sub-class
     public final static class Error extends Result {
         private Exception error;
 
