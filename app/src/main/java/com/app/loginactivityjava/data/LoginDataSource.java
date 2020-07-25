@@ -19,7 +19,7 @@ public class LoginDataSource {
         }
     }
 
-    public void logout() {
+    void logout() {
 
     }
 }
